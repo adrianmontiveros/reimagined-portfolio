@@ -115,6 +115,19 @@ main {
     background-color: white;
 }
 
+.txt-container-large {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+}
+
+.txt-container-large p {
+    font-weight: 400;
+    padding: 5em;
+    max-width: 100vw;
+    margin: auto;
+}
+
 h1 {
     font-size: 5vw;
     font-weight: 700;
@@ -185,6 +198,11 @@ p {
     scroll-behavior: smooth;
 }
 
+.mobile {
+    width: 32vw;
+    background: top center norepeat;
+}
+
 .slider > div {
     scroll-snap-align: start;
 }
@@ -245,6 +263,36 @@ p {
 
 #slide-12 {
     background-image: url(/assets/img/proto6.png);
+
+}
+
+#slide-13 {
+    background-image: url(/assets/img/proto7.png);
+
+}
+
+#slide-14 {
+    background-image: url(/assets/img/proto8.png);
+
+}
+
+#slide-15 {
+    background-image: url(/assets/img/proto9.png);
+
+}
+
+#slide-16 {
+    background-image: url(/assets/img/proto10.png);
+
+}
+
+#slide-17 {
+    background-image: url(/assets/img/proto11.png);
+
+}
+
+#slide-18 {
+    background-image: url(/assets/img/proto12.png);
 
 }
 
@@ -315,4 +363,8 @@ footer {
     .slide {
         max-width: 80vw;
     }
+}
+
+.big-p {
+    width: 100%;
 }
