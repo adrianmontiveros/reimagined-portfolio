@@ -308,6 +308,43 @@ iframe {
     height: 100%;
 }
 
+.katty-container {
+    position: relative;
+    width: 100vw;
+    min-height: 450px;
+}
+
+.katty {
+    z-index: 1;
+    position: absolute;
+    left: 60%;
+    height: 350px;
+    width: 350px;
+    background-image: url(../assets/img/isolatedkatty.png);
+    background-size: auto 100%;
+    -webkit-animation: walk 3s infinite steps(21);
+    animation: walk 3s infinite steps(21);
+}
+
+@-webkit-keyframes walk {
+
+    to {
+        background-position-x: -2100%;
+
+    }
+}
+
+@keyframes walk {
+
+    to {
+        background-position-x: -2100%;
+
+    }
+}
+
+
+
+
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
 footer {
