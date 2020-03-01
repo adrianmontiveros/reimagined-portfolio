@@ -298,8 +298,9 @@ p {
 }
 
 .pdf-embed {
-    width: 100vw;
+    width: 95vw;
     height: 100vh;
+    margin: 0 auto;
 }
 
 iframe {
@@ -373,4 +374,16 @@ footer {
 
 .big-p {
     width: 100%;
+}
+
+.div-picture-large {
+    width: 80vw;
+    margin: 0 auto;
+
+}
+
+.div-picture-large img {
+    width: 80vw;
+    margin: 0 auto;
+
 }
