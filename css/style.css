@@ -99,7 +99,10 @@ main section {
 
 }
 
-.txt-container {}
+.txt-container {
+    display: grid;
+    grid-auto-columns: repeat(auto, minmax(250px, 1fr));
+}
 
 h1 {
     font-size: 5vw;
