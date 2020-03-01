@@ -112,6 +112,7 @@ main {
 .txt-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: white;
 }
 
 h1 {
@@ -217,7 +218,40 @@ p {
 
 }
 
+#slide-7 {
+    background-image: url(/assets/img/proto1.png);
 
+}
+
+#slide-8 {
+    background-image: url(/assets/img/proto2.png);
+
+}
+
+#slide-9 {
+    background-image: url(/assets/img/proto3.png);
+
+}
+
+#slide-10 {
+    background-image: url(/assets/img/proto4.png);
+
+}
+
+#slide-11 {
+    background-image: url(/assets/img/proto5.png);
+
+}
+
+#slide-12 {
+    background-image: url(/assets/img/proto6.png);
+
+}
+
+.pdf-embed {
+    width: 100vw;
+    height: 100vh;
+}
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
@@ -279,6 +313,6 @@ footer {
     }
 
     .slide {
-      max-width: 80vw;
+        max-width: 80vw;
     }
 }
