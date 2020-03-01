@@ -1,0 +1,41 @@
+
+:root {
+    --bg-color: rgba(86, 191, 181, 1);
+    --bg-color-2: rgba(145, 217, 217, 1);
+    --box-color: rgba(68, 166, 166, 1);
+    --box-text-color: rgba(4, 85, 191, 1);
+    --dark-color: rgba(2, 40, 115, 1);
+
+    --big-font: 'Montserrat', sans-serif;
+    --main-font: 'Spartan', sans-serif;
+
+    --white-space: 1rem;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--main-font);
+    color: var(--dark-color);
+
+}
+
+body {
+    background-color: var(--bg-color);
+
+}
+
+header {
+    background-color: var(--bg-color-2);
+}
+
+main {
+
+}
+
+footer {
+
+}
+
