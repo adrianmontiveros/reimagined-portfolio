@@ -23,6 +23,21 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+
+.link-hover:hover {
+    background-color: white;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.link-hover span {
+    color: var(--bg-color);
+    text-shadow: 1px 1px 1px black;
+}
+
 body {
     background-color: var(--box-color);
 
@@ -96,7 +111,7 @@ main {
 
 .txt-container {
     display: grid;
-    grid-auto-columns: repeat(auto-fit, max(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 h1 {
@@ -106,11 +121,19 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1em;
+}
+
+
 p {
     font-weight: 400;
     padding: 3em;
     max-width: 50vw;
 }
+
 
 .topic {
     background-color: var(--bg-color-2);
@@ -136,6 +159,65 @@ p {
     font-size: 2rem;
 
 }
+
+.slider {
+    margin: auto;
+    width: 80vw;
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto;
+    -webkit-scroll-snap-type: x mandatory;
+    -ms-scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
+}
+
+
+
+.slide {
+    border: 1rem solid white;
+    width: 80vw;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 80vh;
+    scroll-behavior: smooth;
+}
+
+.slider > div {
+    scroll-snap-align: start;
+}
+
+#slide-1 {
+    background: url(/assets/img/respweb1.png);
+}
+
+#slide-2 {
+    background-image: url(/assets/img/respweb2.png);
+
+}
+
+#slide-3 {
+    background-image: url(/assets/img/respweb3.png);
+
+}
+
+#slide-4 {
+    background-image: url(/assets/img/respweb4.png);
+
+}
+
+#slide-5 {
+    background-image: url(/assets/img/respweb5.png);
+
+}
+
+#slide-6 {
+    background-image: url(/assets/img/respweb6.png);
+
+}
+
+
 
 /* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
 
@@ -194,5 +276,9 @@ footer {
         font-weight: 400;
         padding: 1em;
         max-width: 80vw;
+    }
+
+    .slide {
+      max-width: 80vw;
     }
 }
