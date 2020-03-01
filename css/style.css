@@ -1,4 +1,3 @@
-
 :root {
     --bg-color: rgba(86, 191, 181, 1);
     --bg-color-2: rgba(145, 217, 217, 1);
@@ -29,13 +28,112 @@ body {
 
 header {
     background-color: var(--bg-color-2);
+    font-family: var(--big-font);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
+header img {
+    width: 10vw;
+    margin-right: 2vw;
+}
+
+
+/* NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR NAVIGATION BAR */
+
+#page-nav {
+    padding-top: 1vh;
+    width: 100vw;
+    background: var(--bg-color-2);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+#page-nav label,
+#hamburger {
+    display: none;
+}
+
+#page-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#page-nav ul li {
+    display: inline-block;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#page-nav ul li a {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+
+/* MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN MAIN */
 main {
-
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
 }
 
-footer {
-
+main section {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 }
 
+/* FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER */
+
+footer {}
+
+
+
+/* [MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES MEDIA QUERIES ] */
+@media screen and (max-width: 768px) {
+
+    header img {
+        padding: 1rem;
+    }
+
+    /* Show Hamburger */
+    #page-nav label {
+        display: inline-block;
+        color: var(--bg-color);
+        background: var(--bg-color-2);
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 1rem;
+    }
+
+    /* Break down menu items into vertical */
+    #page-nav ul li {
+        display: block;
+    }
+
+    #page-nav ul li {
+        border-top: 1px solid;
+        border-color: var(--dark-color);
+    }
+
+    /* Toggle show/hide menu on checkbox click */
+    #page-nav ul {
+        display: none;
+    }
+
+    #page-nav input:checked ~ ul {
+        display: block;
+    }
+}
