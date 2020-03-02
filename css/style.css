@@ -146,12 +146,17 @@ h1 {
     padding: 1em;
     text-align: center;
     line-height: 1.5em;
+    border-bottom: 1rem solid white;
+    border-top: 1rem solid white;
+    text-shadow: .1rem .1em .1em black;
 }
 
 h2 {
     text-align: center;
     font-size: 1.5rem;
     padding: 1em;
+    padding-top: 2em;
+    border-top: 1rem solid black;
 }
 
 
@@ -381,13 +386,16 @@ footer {
         margin-right: 2vw;
     }
 
+    header {}
+
     #page-nav label {
         display: inline-block;
         color: var(--bg-color);
         background: var(--bg-color-2);
         font-style: normal;
-        font-size: 1.2em;
-        padding: 1rem;
+        font-size: 2em;
+        padding: 2rem;
+
     }
 
     #page-nav ul li {
